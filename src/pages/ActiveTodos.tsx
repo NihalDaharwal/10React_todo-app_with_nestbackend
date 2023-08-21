@@ -55,7 +55,7 @@ function ActiveTodos() {
   };
 
   React.useEffect(() => {
-    if (todos.length == 0) getAllNotCompletedTodos();
+    if (todos.length === 0) getAllNotCompletedTodos();
   }, []);
   return (
     <div>

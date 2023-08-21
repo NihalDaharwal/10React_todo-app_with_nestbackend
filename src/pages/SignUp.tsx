@@ -157,7 +157,7 @@ export const SignUp = () => {
                                 "token",
                                 response1.data.token
                               );
-                              dispatchEvent(new Event("storage"));
+                              window.dispatchEvent(new Event("storage"));
                               navigate("/");
                             });
                         });

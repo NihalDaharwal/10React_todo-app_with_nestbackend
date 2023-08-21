@@ -7,6 +7,7 @@ import ProtectedRoute from "./Routes/ProtectedRoute";
 import UsersPage from "./pages/UsersPage";
 import ActiveTodos from "./pages/ActiveTodos";
 import CompeletedTodos from "./pages/CompletedTodos";
+import { UserDetail } from "./pages/UserDetail";
 
 export const App = () => {
   return (
@@ -43,6 +44,15 @@ export const App = () => {
           element={
             <ProtectedRoute>
               <UsersPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/userdetail"
+          element={
+            <ProtectedRoute>
+              <UserDetail />
             </ProtectedRoute>
           }
         />
