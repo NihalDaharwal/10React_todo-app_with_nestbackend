@@ -42,31 +42,11 @@ export const UserDetail = () => {
 
   return (
     <>
-      {/* <div onLoad={getAllNotCompletedTodos}>
-        <p>{id}</p>
-        <p>firstName: {firstName}</p>
-        <p>lastName: {lastName}</p>
-        <p>email: {email}</p>
-
-        <div>todos count: {todos.length}</div>
-        {todos.map((item) => {
-          return (
-            <div key={item.id}>
-              <ul>
-                <li>todo id: {item.id}</li>
-                <li> {item.title}</li>
-                <li> {item.date}</li>
-              </ul>
-            </div>
-          );
-        })}
-      </div> */}
-
       <div
         className="p-4 border rounded shadow"
         onLoad={getAllNotCompletedTodos}
       >
-        <p className="text-lg font-semibold">{id}</p>
+        <p className="text-lg font-semibold"> USER ID: {id}</p>
         <p>First Name: {firstName}</p>
         <p>Last Name: {lastName}</p>
         <p>Email: {email}</p>
@@ -75,7 +55,7 @@ export const UserDetail = () => {
         {todos.map((item) => (
           <div key={item.id} className="mt-2">
             <ul className="list-disc pl-4">
-              <li>Todo ID: {item.id}</li>
+              {/* <li>Todo ID: {item.id}</li> */}
               <li>{item.title}</li>
               <li>{item.date}</li>
             </ul>

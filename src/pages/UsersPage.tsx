@@ -141,7 +141,7 @@ const UsersPage = () => {
                             </button>
                           </td>
 
-                          {/* <td className="py-4 px-6 text-sm font-medium text-start whitespace-nowrap">
+                          <td className="py-4 px-6 text-sm font-medium text-start whitespace-nowrap">
                             <button
                               hidden={user.role === "ADMIN" ? true : false}
                               onClick={async () => {
@@ -162,7 +162,7 @@ const UsersPage = () => {
                             >
                               Delete
                             </button>
-                          </td> */}
+                          </td>
                         </tr>
                       );
                     })}
